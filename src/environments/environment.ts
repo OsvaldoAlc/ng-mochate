@@ -12,5 +12,5 @@ export const environment = {
     projectId: "ng-mochate",
     storageBucket: "ng-mochate.appspot.com",
     messagingSenderId: "1059854966048"
-  };
+  }
 };
