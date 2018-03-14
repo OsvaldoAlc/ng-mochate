@@ -11,6 +11,15 @@
     typescript "~2.6.2"
     webpack-sources "^1.0.1"
 
+"@angular-devkit/core@^0.4.5":
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-0.4.5.tgz#da081d63c702c85be2b872d14cd2c59e49915573"
+  dependencies:
+    ajv "~5.5.1"
+    chokidar "^1.7.0"
+    rxjs "^5.5.6"
+    source-map "^0.5.6"
+
 "@angular-devkit/core@~0.0.28":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-0.0.29.tgz#6fb319b45a62eff172318cbe256fdb24ef20af2b"
@@ -20,6 +29,13 @@
     rxjs "^5.5.6"
     source-map "^0.5.6"
 
+"@angular-devkit/schematics@^0.4.5":
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-0.4.5.tgz#0b7a2828d4e53e4342cca68ffb61e04f333250ba"
+  dependencies:
+    "@ngtools/json-schema" "^1.1.0"
+    rxjs "^5.5.6"
+
 "@angular-devkit/schematics@~0.0.51":
   version "0.0.52"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-0.0.52.tgz#cbd2f42778b50d6422a254ffaec05ad4ef3cb6c0"
@@ -27,9 +43,15 @@
     "@ngtools/json-schema" "^1.1.0"
     rxjs "^5.5.6"
 
-"@angular/animations@^5.2.0":
+"@angular/animations@^5.2.8":
   version "5.2.8"
   resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-5.2.8.tgz#31cdb49163881323fa5ded41e89683ec5e9ac8b5"
+  dependencies:
+    tslib "^1.7.1"
+
+"@angular/cdk@angular/cdk-builds":
+  version "6.0.0-beta.4-c490ac1"
+  resolved "https://codeload.github.com/angular/cdk-builds/tar.gz/68f7cfb1e59477ae93f74adce448a942c93736bf"
   dependencies:
     tslib "^1.7.1"
 
@@ -139,6 +161,15 @@
 "@angular/language-service@^5.2.0":
   version "5.2.8"
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-5.2.8.tgz#9dcc809ac4595e8b740971cf7f68a507ed5e4ff4"
+
+"@angular/material@angular/material2-builds":
+  version "6.0.0-beta.4-c490ac1"
+  resolved "https://codeload.github.com/angular/material2-builds/tar.gz/ad82061f16dfa239d9825ee2397b349834f5f580"
+  dependencies:
+    "@angular-devkit/core" "^0.4.5"
+    "@angular-devkit/schematics" "^0.4.5"
+    "@schematics/angular" "^0.4.5"
+    tslib "^1.7.1"
 
 "@angular/platform-browser-dynamic@^5.2.0":
   version "5.2.8"
@@ -268,6 +299,12 @@
     source-map "^0.5.6"
     tree-kill "^1.0.0"
     webpack-sources "^1.1.0"
+
+"@schematics/angular@^0.4.5":
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-0.4.5.tgz#b77f33aee4a384072e4277a4e2bfb5ea899f1e03"
+  dependencies:
+    typescript "~2.6.2"
 
 "@schematics/angular@~0.1.16":
   version "0.1.17"
@@ -3032,6 +3069,10 @@ grpc@^1.9.1:
     nan "^2.0.0"
     node-pre-gyp "^0.6.39"
     protobufjs "^5.0.0"
+
+hammerjs@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/hammerjs/-/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
 
 handle-thing@^1.2.5:
   version "1.2.5"

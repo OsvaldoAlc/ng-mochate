@@ -4,10 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { AngularFireModule } from 'angularfire2';
-import {AngularFirestoreModule} from 'angularfire2/firestore',
-import { AngularFireAuthModule } from 'angularfire2/auth';
-import { environment } from '../environments/environment';
+
+import { CoreModule } from './core/core.module';
+
 
 
 @NgModule({
@@ -16,9 +15,8 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,AngularFireModule.initializeApp(environment.firebase,'ng-mochate'),
-    AngularFirestoreModule, 
-    AngularFireAuthModule,
+    CoreModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
