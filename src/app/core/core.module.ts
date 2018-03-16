@@ -6,6 +6,7 @@ import { environment } from '../../environments/environment';
 import { AuthService } from './services/auth.service';
 import { LoginComponent } from './login/login.component';
 import { MaterialSharedModule } from '../material-shared/material-shared.module';
+import { AuthGuard } from './guards/auth.guard';
 
 
 @NgModule({
@@ -21,6 +22,6 @@ import { MaterialSharedModule } from '../material-shared/material-shared.module'
     AngularFirestoreModule,
     LoginComponent
   ],
-  providers: [AuthService]
+  providers: [AuthService, AuthGuard]
 })
 export class CoreModule { }
