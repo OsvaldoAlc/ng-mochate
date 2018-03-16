@@ -3,6 +3,8 @@ import { AngularFireModule } from 'angularfire2';
 import {AngularFirestoreModule} from 'angularfire2/firestore';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../../environments/environment';
+import { AuthService } from './services/auth.service';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   imports: [
@@ -10,10 +12,12 @@ import { environment } from '../../environments/environment';
     AngularFirestoreModule,
     AngularFireAuthModule,
   ],
-  declarations: [],
+  declarations: [LoginComponent],
   exports: [
     AngularFireModule,
-    AngularFirestoreModule
-  ]
+    AngularFirestoreModule,
+    LoginComponent
+  ],
+  providers: [AuthService]
 })
 export class CoreModule { }
