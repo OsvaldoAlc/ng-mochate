@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { HomeComponent } from './home/home.component';
 import { MatButtonModule } from '@angular/material';
+import { GruposModule } from './grupos/grupos.module';
 
 
 
@@ -20,7 +21,8 @@ import { MatButtonModule } from '@angular/material';
     BrowserModule,
     CoreModule,
     AppRoutingModule,
-    MatButtonModule
+    MatButtonModule,
+    GruposModule
   ],
   providers: [],
   bootstrap: [AppComponent]
