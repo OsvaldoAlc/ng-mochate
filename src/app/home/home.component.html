@@ -1,7 +1,11 @@
-<div fxLayout='column' fxLayoutAlign="space-around center" class="zero">
-<h1>MOCHATE</h1>
-
-<button mat-button (click)="loginWithGoogle()">Signup with Google Perro!</button>
-<button mat-button (click)="loginWithFacebook()">Signup with Facebook!</button>
-
+<div fxLayout='column' fxLayoutAlign="center" class="zero">
+    <h1>MOCHATE</h1>
+    <button class="btn-login google" (click)="loginWithGoogle()">
+        <fa name="google" size="lg"></fa>
+        Signup with Google Perro!
+    </button>
+    <button class="btn-login facebook" (click)="loginWithFacebook()">
+        <fa name="facebook" size="lg"></fa>
+        Signup with Facebook!
+    </button>
 </div>

@@ -1,3 +1,19 @@
-h1{
-    text-align: center;
-}
+@import '~assets/variables';
+@import '~assets/mixins';
+
+:host
+
+    .zero{
+        height: 100%;
+        padding: 15px;
+        @include gradient-background(45deg, $highlight-color, $sec-color, 0%, 100%);
+    }
+
+    h1{
+        text-align: center;
+        color: $base-color;
+    }
+
+    .btn-login{
+        margin-bottom: 10px;
+    }
