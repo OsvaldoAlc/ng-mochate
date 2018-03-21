@@ -6,19 +6,25 @@ import { Observable } from "rxjs/Observable";
 @Injectable()
 export class AuthService {
 
-  user$: Observable<firebase.User>
+  user$: Observable<firebase.User>;
 
 
   constructor(private afAuth: AngularFireAuth) {
     this.user$ = this.afAuth.authState;
   }
-  
+
   oAuthLogin(provider) {
     return this.afAuth.auth.signInWithPopup(provider);
 
-  } 
+  }
+
   googleLogin() {
     const provider = new firebase.auth.GoogleAuthProvider();
+    return this.oAuthLogin(provider);
+  }
+
+  facebookLogin() {
+    const provider = new firebase.auth.FacebookAuthProvider();
     return this.oAuthLogin(provider);
   }
 
