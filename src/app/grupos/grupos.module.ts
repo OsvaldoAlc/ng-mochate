@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { GruposRoutingModule } from './grupos-routing.module';
 import { GroupListComponent } from '../grupos/group-list/group-list.component';
 import { GroupsService } from './groups.service';
+import { GroupFormComponent } from '../grupos/group-form/group-form.component';
 
 @NgModule({
   imports: [
