@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { HomeComponent } from './home/home.component';
 import { MatButtonModule } from '@angular/material';
+import { GroupDetailComponent } from './group-detail/group-detail.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    GroupDetailComponent
   ],
   imports: [
     BrowserModule,

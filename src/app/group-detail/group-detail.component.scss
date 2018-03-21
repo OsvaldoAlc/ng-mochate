@@ -1,0 +1,71 @@
+@import '~assets/variables';
+
+:host
+    nav{
+        background: $main-color;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        h1{
+            margin: 0;
+            font-size: 18px;
+            color: $base-color;
+        }
+        .group-picture{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: black;
+            margin-right: 10px;
+        }
+        .btn-menu{
+            margin-left: auto;
+        }
+    }
+
+    .members{
+        padding: 10px;
+        h2{
+            font-size: 15px;
+            color: $main-color;
+            font-weight: lighter;
+        }
+        .members-list{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li{
+                display: flex;
+                align-items: center;
+                padding: 10px 0;
+            }
+        }
+        .host{
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid lighten($text-color, 50%);
+            padding: 10px 0;
+        }
+        .member-picture{
+            width: 45px;
+            height: 45px;
+            margin-right: 10px;
+            background: gray;
+            border-radius: 50%;
+        }
+        .user{
+            display: block;
+            p{
+                margin: 0;
+            }
+            span{
+                font-style: italic;
+                font-size: 13px;
+                font-weight: lighter;
+                color: lighten($text-color, 30%);
+            }
+        }
+        .will-take{
+            margin-left: auto;
+        }
+    }
