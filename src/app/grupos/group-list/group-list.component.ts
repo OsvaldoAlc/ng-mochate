@@ -8,9 +8,11 @@ import { Router } from '@angular/router';
   templateUrl: './group-list.component.html',
   styleUrls: ['./group-list.component.scss']
 })
+
 export class GroupListComponent implements OnInit {
   public groups$: Observable<any>;
-  constructor(private groupService: GroupsService, private router: Router) { }
+
+  constructor( private groupService: GroupsService, private router: Router ) { }
 
   ngOnInit() {
     this.groups$ = this.groupService.getUserGroups();
