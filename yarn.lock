@@ -443,9 +443,9 @@ amqplib@^0.5.2:
     readable-stream "1.x >=1.1.9"
     safe-buffer "^5.0.1"
 
-angular-font-awesome@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/angular-font-awesome/-/angular-font-awesome-3.1.2.tgz#9378732612d8e8c71e0d7c2faa0faddc7f858ec9"
+angular2-fontawesome@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/angular2-fontawesome/-/angular2-fontawesome-5.2.1.tgz#dcab656b7750b8d119ab2b3b6b4abda1a4ab4a84"
 
 angularfire2@^5.0.0-rc.6:
   version "5.0.0-rc.6"

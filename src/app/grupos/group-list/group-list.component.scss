@@ -1,0 +1,9 @@
+@import '~assets/variables';
+@import '~assets/mixins';
+
+:host 
+
+    mat-sidenav-container{
+        height: 100%;
+        background: $base-color;
+    }

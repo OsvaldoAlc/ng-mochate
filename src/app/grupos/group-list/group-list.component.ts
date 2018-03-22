@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./group-list.component.scss']
 })
 export class GroupListComponent implements OnInit {
-
   public groups$: Observable<any>;
   constructor(private groupService: GroupsService, private router: Router) { }
 

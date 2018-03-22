@@ -6,7 +6,9 @@ import { environment } from '../../environments/environment';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './guards/auth.guard';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { HeaderNavComponent } from './components/header-nav/header-nav.component';
+import { MaterialSharedModule } from '../material-shared/material-shared.module';
+import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
 
 @NgModule({
   imports: [
@@ -14,14 +16,18 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     AngularFirestoreModule,
     AngularFireAuthModule,
     FlexLayoutModule,
-    AngularFontAwesomeModule
+    Angular2FontawesomeModule,
+    MaterialSharedModule
   ],
-  declarations: [],
+  declarations: [
+    HeaderNavComponent
+  ],
   exports: [
     AngularFireModule,
     AngularFirestoreModule,
     FlexLayoutModule,
-    AngularFontAwesomeModule
+    Angular2FontawesomeModule,
+    HeaderNavComponent
   ],
   providers: [AuthService, AuthGuard]
 })

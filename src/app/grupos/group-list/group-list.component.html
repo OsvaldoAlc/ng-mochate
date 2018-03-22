@@ -1,14 +1,15 @@
-<div fxLayout='column' fxLayoutAlign="space-around center" class="zero">
-  <h4>MOCHATE</h4>
+<mat-sidenav-container>
+    <app-header-nav></app-header-nav>
 
-  <h1>Bienvenido</h1>
+    <div fxLayout='column' fxLayoutAlign="space-around center" class="zero">
+        <h1>Bienvenido</h1>
+        <ul>
+            <li *ngFor="let group of groups$ | async">
+                {{group | json}}
+            </li>
+        </ul>
+    
+        <button mat-button (click)="addGroup()">Agregar Groupo</button>
+    </div>
 
-<ul>
-  <li *ngFor="let group of groups$ | async">
-    {{group | json}}
-  </li>
-</ul>
-
-<button mat-button (click)="addGroup()">Agregar Groupo</button>
-
-</div>
+</mat-sidenav-container>

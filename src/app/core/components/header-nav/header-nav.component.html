@@ -1,0 +1,15 @@
+<header>
+    <h1>Mochate</h1>
+    <button (click)="sidenav.toggle()"><fa [name]="'bars'" [size]=1></fa></button>
+</header>
+
+<mat-sidenav #sidenav align="end" mode="side">
+    <button (click)="sidenav.toggle()"><fa [name]="'times'" [size]=2></fa></button>
+    <nav>
+        <ul>
+            <li>
+                <a>Logout</a>
+            </li>
+        </ul>
+    </nav>
+</mat-sidenav>
