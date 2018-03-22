@@ -11,7 +11,7 @@ import { GroupFormComponent } from '../grupos/group-form/group-form.component';
     CommonModule,
     GruposRoutingModule
   ],
-  declarations: [GroupListComponent],
+  declarations: [GroupListComponent, GroupFormComponent],
   providers: [GroupsService]
 })
 export class GruposModule { }
