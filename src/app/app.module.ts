@@ -15,7 +15,7 @@ import { GruposModule } from './grupos/grupos.module';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

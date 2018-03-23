@@ -1,12 +1,16 @@
 @import '~assets/variables';
 @import '~assets/mixins';
 
-.zero{
-    height: 100%;
-    padding: 15px;
-    @include gradient-background(45deg, $highlight-color, $sec-color, 0%, 100%);
-}
+:host 
 
-body, h1, p{
-    color:$base-color;
-}
+    mat-sidenav-container{
+        height: 100%;
+        background: $base-color;
+    }
+    .user-info{
+        text-align: center;
+        img{
+            border: 4px solid $main-color;
+            @include border-radius(50%);
+        }
+    }

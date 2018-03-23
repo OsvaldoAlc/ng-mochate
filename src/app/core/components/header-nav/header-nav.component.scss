@@ -1,0 +1,46 @@
+@import '~assets/variables';
+@import '~assets/mixins';
+
+:host
+
+    header{
+        background: $main-color;
+        display: flex;
+        align-items: center;
+        color: $base-color;
+        padding: 12px 10px;
+        @include gradient-background( to left, $main-color, $sec-color, 0%, 100% );
+        h1{
+            margin: 0;
+            font-size: 22px;
+        }
+        button{
+            margin-left: auto;
+            color: $base-color;
+        }
+    }
+
+    mat-sidenav{
+        width: 60%;
+        text-align: right;
+        padding: 10px;
+        background: #fafafa;
+        button{
+            color: lighten($text-color, 30%);
+            margin-bottom: 15px;
+        }
+        nav{
+            text-align: left;
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li{
+                    padding: 10px 0;
+                    a{
+                        color: $highlight-color;
+                    }
+                }
+            }
+        }
+    }
