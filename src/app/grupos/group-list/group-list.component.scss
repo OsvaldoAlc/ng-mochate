@@ -10,6 +10,7 @@
     .user-info{
         text-align: center;
         img{
+            width: 115px;
             border: 4px solid $main-color;
             @include border-radius(50%);
         }
