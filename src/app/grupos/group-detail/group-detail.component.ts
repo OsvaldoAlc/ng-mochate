@@ -21,5 +21,4 @@ export class GroupDetailComponent implements OnInit {
                 console.log(this.group);
             });
     }
-
 }

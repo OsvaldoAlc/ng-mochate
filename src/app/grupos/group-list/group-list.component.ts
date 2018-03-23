@@ -27,7 +27,7 @@ export class GroupListComponent implements OnInit {
   }
 
   addGroup() {
-    this.router.navigate(['/addgroup']);
+    this.router.navigate(['/group-detail']);
   }
 
 }
