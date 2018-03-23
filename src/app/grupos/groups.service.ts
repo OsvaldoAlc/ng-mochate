@@ -7,9 +7,13 @@ import { AuthService } from '../core/services/auth.service';
 @Injectable()
 export class GroupsService {
     public groupsRef: AngularFirestoreCollection<any>;
-    // public groups$: Observable<any>;
+    public membersOfGroup;
 
-    constructor( private afs: AngularFirestore, private authService: AuthService ) {
+    constructor( 
+        private afs: AngularFirestore, 
+        private authService: AuthService 
+    )
+    {
         this.authService.user$.subscribe(user => {
             this.groupsRef = this.afs.collection('groups', ref => ref.where('userId', '==', user.uid));
         });
@@ -26,6 +30,22 @@ export class GroupsService {
     }
 
     getGroupDetail( id ) {
-        return this.afs.doc('groups/' + id);
+        return this.afs.doc(`groups/${id}`).snapshotChanges()
+                .map( a => {
+                    const data = a.payload.data();
+                    return data;
+                })
+    }
+
+    getGroupMembers( id ) {
+        const groupsRef = this.afs.collection('groups').doc(id).collection('members');
+
+        return groupsRef.snapshotChanges().map( actions => {
+            return actions.map( a => {
+                const data = a.payload.doc.data();
+                const id = a.payload.doc.id;
+                return { id, ...data };
+            })
+        });
     }
 }
