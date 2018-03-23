@@ -25,3 +25,16 @@
     background: $highlight-color;
     color: $base-color;
 }
+
+.btn-add-group{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 18px;
+    background: $base-color;
+    color: $highlight-color;
+}

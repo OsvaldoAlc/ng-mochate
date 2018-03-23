@@ -1,0 +1,12 @@
+@import '~assets/variables';
+@import '~assets/mixins';
+
+.zero{
+    height: 100%;
+    padding: 15px;
+    @include gradient-background(45deg, $highlight-color, $sec-color, 0%, 100%);
+}
+
+body, h1, p{
+    color:$base-color;
+}

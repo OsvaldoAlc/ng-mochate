@@ -4,11 +4,10 @@
   <h1>Bienvenido</h1>
 
 <ul>
-  <li *ngFor="let group of groups$ | async">
-    {{group | json}}
+  <li *ngFor="let group of groups$ | async"  [attr.id]="group.id">
+   <div>{{group.nombre}}</div> 
   </li>
 </ul>
 
-<button mat-button (click)="addGroup()">Agregar Groupo</button>
-
+<button class="btn-add-group"  (click)="addGroup()">+</button>
 </div>
